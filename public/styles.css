@@ -1,0 +1,404 @@
+/* Styling for base elements */
+* {
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+
+#ocean-waves-bg{
+  position:fixed;
+  right: 0;
+  filter: brightness(.75);
+}
+
+button#sound-test{
+  margin: auto;
+  border: 2px solid #9d8027;
+  background-color: #ffff6c;
+  color: #9d8027;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+button#sound-test:hover{
+  margin: auto;
+  border: 2px solid #9d8027;
+  background-color: #9d8027;
+  color: #ffff6c;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+select#sound-select{
+  margin:auto;
+}
+
+.content{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+}
+/* Container class for centered column components */
+.centerColumn {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+}
+
+/* Styling for homepage title */
+.title {
+  font-size: 5vw;
+  margin: 2.5vw 0px 0px 0px;
+  font-family: 'Chivo Mono', monospace;
+}
+
+/* base styling for h2 elements */
+h2 {
+  font-size: 2.5vw;
+}
+
+.widget-title {
+  font-family: 'Chivo Mono', monospace;
+  color: #3078a8;
+  width: 100%;
+  text-align: center
+}
+
+/* centers text */
+.centeredText {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.dash {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Component containing dashboard */
+.dashboardContainer {
+  display: flex;
+  flex-direction: row;
+
+   width: 94%;
+   height: 60%;
+}
+
+.dashboardSpacer {
+    width: 3%;
+}
+
+
+/* Left column of dashboard */
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Right column of dashboard */
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Enable sound popup styling */
+.enable-sound-popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.enable-sound-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 25%;
+  text-align: center;
+}
+
+.enable-sound-content p {
+  background-color: white;
+}
+
+.button {
+  margin: 0 10px;
+}
+
+/*adding class "hide" will hide entire notification*/
+.hide {
+  display: none;
+}
+
+/*overall notification body*/
+.notif {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.notif-container {
+  background-color: #ffffff;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 10px;
+}
+
+/*notification button that will close the popup*/
+.close {
+  color: #9c8026;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #ffff6d;
+  border: 2px solid #9c8026;
+  border-radius: 10px;
+}
+
+.close:hover,
+.close:focus {
+  background-color: #9c8026;
+  color: #ffff6d;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #ffff6d;
+}
+
+.printer-notif {
+  font-weight: bold;
+  font-size: 20px;
+}
+/*End of notification styling*/
+
+/* Start of WEPA notification functionality styling */
+/* I added some very basic styling, feel free to change anything */
+.wepa-container {
+  border: 5px;
+  border-style: solid;
+  border-color: #abd2ff;
+  border-radius: 20px;
+  background-color: #ffffff;
+
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Tasks div styling */
+.taskBoard {
+  border: 5px;
+  border-style: solid;
+  border-color: #abd2ff;
+  border-radius: 25px;
+  background-color: #ffffff;
+}
+
+/* Important dates div styling */
+.dateBoard {
+  border: 5px;
+  border-style: solid;
+  border-color: #abd2ff;
+  border-radius: 25px;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+/* task header */
+.taskTitle {
+  background-color: #ffffff;
+}
+/* styling elements for tasks */
+.taskLine {
+  color: #abd2ff;
+  background-color: #abd2ff;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  border-radius: 20px;
+}
+
+.taskDate {
+  background-color: #ffffff;
+  color: #6a92db;
+  margin-bottom: 0px;
+  margin-left: 20px;
+  margin-top: 10px;
+  font-size: 2.5vw;
+}
+
+/* styling elements for important dates */
+.date {
+  font-size: 1.5vw;
+  background-color: #ffffff;
+  margin-left: 1vw;
+}
+
+/* Base styling for hr element */
+hr {
+  height: 5px;
+  width: 100%;
+  color: gray;
+  background-color: gray;
+  border-width: 0px;
+  margin: 5px 0px;
+}
+
+/* Base styling for unordered list */
+ul {
+  margin-left: 20px;
+  background-color: #ffffff;
+}
+
+/* Base styling for list element */
+li {
+  font-size: 2vw;
+  background-color: #ffffff;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+/* base styling for list component */
+li::marker {
+  color: #6a92db;
+  height: 10vw;
+  border-radius: 100px;
+  font-size: 2.5vw;
+}
+
+.white {
+  background-color: #ffffff;
+}
+.green {
+  color: #abd2ff;
+  background-color: #abd2ff;
+}
+.red {
+  color: #abd2ff;
+  background-color: #abd2ff;
+}
+.blue {
+  color: #abd2ff;
+  background-color: #abd2ff;
+}
+
+/* Update the buttons to their status color */
+.button-group {
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-group label {
+  padding: 10px;
+}
+
+.button-group #allowed-printer-down-input {
+  background-color: white;
+}
+
+.vol-slider-container {
+  padding: 10px;
+}
+
+.print-count-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  margin: 15px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.button.green {
+  background-color: #7dff62;
+  color: #4b7d20;
+  font-weight: bolder;
+  border: 2px solid #4b7d20;
+}
+
+.button.yellow {
+  background-color: #ffff6d;
+  color: #9c8026;
+  font-weight: bolder;
+  border: 2px solid #9c8026;
+}
+
+.button.red {
+  background-color: #ff9090;
+  color: #a31d1d;
+  font-weight: bolder;
+  border: 2px solid #a31d1d;
+}
+
+.button.green:hover {
+  background-color: #4b7d20;
+  color: #7dff62;
+  border: 2px solid #7dff62;
+}
+
+.button.yellow:hover {
+  background-color: #9c8026;
+  color: #ffff6d;
+  border: 2px solid #ffff6d;
+}
+
+.button.red:hover {
+  background-color: #c52b2b;
+  color: #ffbbbb;
+  border: 2px solid #ffbbbb;
+}
+/* End of WEPA notification functionality styling */
+
+
+
+/* Responsive Layout */
+
+@media (max-width: 800px) {
+    .dashboardContainer {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .dashboardSpacer {
+        width: 15%;
+    }
+
+    .leftColumn {
+        width: 100%;
+    }
+
+    .rightColumn {
+        width: 100%;
+    }
+}
+
+
+
